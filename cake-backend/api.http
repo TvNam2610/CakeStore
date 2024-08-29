@@ -1,0 +1,112 @@
+
+
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "name":"namtran05",
+    "email": "usertest@example.com",
+    "password": "123456"
+}
+
+
+###
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "usertest@example.com",
+    "password": "123456"
+}
+
+
+###
+GET http://localhost:5000/api/v1/user/getAll
+
+###
+GET http://localhost:5000/api/v1/category/1
+
+###
+POST  http://localhost:5000/api/v1/product/
+Content-Type: application/json
+
+{
+    "name": "Chocolate Cake",
+    "price": 25,
+    "quantity": 20,
+    "image": "https://example.com/chocolate_cake.jpg",
+    "description": "Delicious chocolate cake with creamy frosting",
+    "category_id": 1
+}
+
+###
+GET  http://localhost:5000/api/v1/order/
+
+
+###
+PUT  http://localhost:5000/api/v1/product/
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Chocolate Cake",
+    "price": 25,
+    "quantity": 20,
+    "image": "https://example.com/chocolate_cake.jpg",
+    "description": "Delicious chocolate cake with creamy frosting",
+    "category_id": 1
+}
+
+### Tạo mới một product image
+POST http://localhost:5000/api/v1/product/images
+Content-Type: application/json
+
+{
+    "productId": 1,
+    "imageUrl": "http://example.com/image2.jpg"
+}
+
+### Lấy tất cả hình ảnh theo productId
+GET http://localhost:5000/api/v1/flavor/1
+
+
+###
+POST http://localhost:5000/api/v1/order/order-items
+Content-Type: application/json
+
+{
+  "orderId": 1,
+  "productId": 1,
+  "name":"haha",
+  "price": 109,
+  "quantity": 3
+}
+
+
+
+###
+GET http://localhost:5000/api/v1/payment/config
+
+
+###Lấy tất các order mà user đã order qua user id
+GET http://localhost:5000/api/v1/order/orderByUser/3
+
+###
+# Lấy danh sách sản phẩm tương tự dựa trên category_id và productId
+GET http://localhost:5000/api/v1/order/
+###
+# Lấy danh sách sản phẩm tương tự dựa trên category_id và productId
+GET http://localhost:5000/api/v1/flavor/1
+
+
+### Add multiple flavors to a product
+POST http://localhost:5000/api/v1/product/3/flavors
+Content-Type: application/json
+
+{
+  "flavorIds": [1, 2, 3]
+}
+
+
+###
+GET http://localhost:5000/api/v1/statistic

@@ -1,0 +1,76 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$error-color: #dc3545;
+$warning-color: #ffc107;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Styles
+.order-confirm-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 24px;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    .order-details {
+        margin-bottom: 20px;
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+
+            &.total {
+                font-weight: bold;
+            }
+
+            .item-name {
+                flex: 1;
+                font-weight: bold;
+            }
+
+            .item-price {
+                margin-left: 20px;
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .payment-status {
+        margin-bottom: 20px;
+
+        font-weight: bold;
+        color: $success-color;
+    }
+
+    .back-to-home {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            color: $primary-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

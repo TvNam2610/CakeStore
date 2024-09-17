@@ -1,0 +1,54 @@
+// DetailModal.scss
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: #aaa;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.order-details {
+  margin-bottom: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.paper {
+  border: 1px solid #e0e0e0;
+  display: flex;
+}
+
+
+
+.typography {
+  color: #757575;
+}
+
+// Sử dụng các biến màu và kích thước từ theme của bạn nếu có

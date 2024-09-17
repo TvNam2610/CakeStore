@@ -1,0 +1,133 @@
+.footer {
+    width: 100%;
+    .container {
+        width: 100%;
+    }
+}
+
+.footer-main {
+    padding: 40px 60px;
+}
+
+.footer-sec {
+    margin-top: 25px;
+    background-color: #fff8ef;
+    border-top: 2px solid #ffecd4;
+    border-bottom: 2px solid #ffecd4;
+    padding: 24px 60px;
+    display: flex;
+}
+.footer-sec-content {
+    width: 97%;
+    margin: auto;
+    max-width: 1320px;
+    display: flex;
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        margin: 0 20px;
+    }
+}
+.subscribe-newsletter {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #251d34;
+}
+.input-group {
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    border: 1px solid hsla(0, 0%, 53.3%, 0.32);
+    border-radius: 10px;
+    overflow: hidden;
+
+    input.email {
+        height: 50px;
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 20px 10px;
+        outline: 0;
+        border-color: hsla(0, 0%, 53.3%, 0.32);
+        background-color: #fff;
+    }
+
+    .subscribe {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: 1px solid #f35c5c;
+        background-color: #f35c5c;
+        color: var(--white);
+        width: 100px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 6px;
+        height: 38px;
+        padding: 0;
+        z-index: 9;
+    }
+}
+
+.stay-conn {
+    color: rgba(28, 33, 32, 0.75);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+.main-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-sec-center {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.56;
+    color: #292640;
+    margin-bottom: 10px;
+}
+.footer-listing {
+    padding: 4px 0;
+    .title {
+        color: #888;
+        font-size: 1.4rem;
+    }
+
+    .title:hover {
+        color: var(--black);
+        text-decoration: underline;
+    }
+}
+.main-sec-right {
+    .exp-bakingo {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 5px;
+    }
+
+    .qr {
+        display: flex;
+        align-items: center;
+        div {
+            margin-right: 10px;
+        }
+    }
+}

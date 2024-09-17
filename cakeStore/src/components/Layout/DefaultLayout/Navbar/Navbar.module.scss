@@ -1,0 +1,109 @@
+.wrapper {
+    width: 100%;
+    background-color: var(--white);
+    border-top: 1px solid rgba(28, 33, 32, 0.1);
+    background: #fff;
+    box-shadow: 0 3px 5px 0 hsla(0, 0%, 52.5%, 0.2) !important;
+    position: relative;
+    z-index: 99;
+}
+
+.container {
+    padding: 0 60px;
+}
+.nav {
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+
+    .nav-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: 8px 2px;
+        height: 100%;
+        .nav-title {
+            padding-right: 5px;
+        }
+
+        .hello {
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            height: 2px;
+            background: #fff;
+            transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+            transition: transform 0.3s, -webkit-transform 0.3s;
+        }
+    }
+    .nav-item:hover .hello {
+        height: 1px;
+        width: 26px;
+        background: #ff5f5d;
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+    }
+
+    .subnav-container {
+        display: flex;
+    }
+}
+
+.subnav {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+ul.submenu-list {
+    min-width: 150px;
+    list-style: none;
+    margin: 0 !important;
+
+    li {
+        padding: 0.25em 0.25em 12px;
+    }
+
+    li a {
+        font-size: 13px;
+        font-style: normal;
+        line-height: 10px;
+        font-weight: 500;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #251d34;
+        padding-right: 15px;
+    }
+    li:hover a {
+        color: #ff5f5d;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+.submenu-common {
+    padding: 24px 20px 20px;
+    background: #fff;
+    min-width: 242px;
+    a .submenu-img {
+        background: #efefef;
+        border-radius: 0 0 4px 4px;
+        img {
+            width: 203px;
+            height: 203px;
+            border-radius: 6px 6px 0 0;
+        }
+        .submenu-img-title {
+            font-weight: 600;
+            text-align: center;
+            color: #333;
+            padding: 10px 0;
+        }
+    }
+}
